@@ -53,10 +53,6 @@ public class pizzaForm extends javax.swing.JFrame {
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         exitMenuItem = new javax.swing.JMenuItem();
-        editMenu = new javax.swing.JMenu();
-        copyMenuItem = new javax.swing.JMenuItem();
-        cutMenuItem = new javax.swing.JMenuItem();
-        pasteMenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -157,25 +153,6 @@ public class pizzaForm extends javax.swing.JFrame {
 
         menuBar.add(fileMenu);
 
-        editMenu.setText("Edit");
-
-        copyMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
-        copyMenuItem.setText("Copy");
-        copyMenuItem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                copyMenuItemActionPerformed(evt);
-            }
-        });
-        editMenu.add(copyMenuItem);
-
-        cutMenuItem.setText("Cut");
-        editMenu.add(cutMenuItem);
-
-        pasteMenuItem.setText("Paste");
-        editMenu.add(pasteMenuItem);
-
-        menuBar.add(editMenu);
-
         setJMenuBar(menuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -234,10 +211,6 @@ public class pizzaForm extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_exitMenuItemActionPerformed
 
-    private void copyMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copyMenuItemActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_copyMenuItemActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -275,17 +248,13 @@ public class pizzaForm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton calculateButton;
-    private javax.swing.JMenuItem copyMenuItem;
-    private javax.swing.JMenuItem cutMenuItem;
     private javax.swing.JLabel diameterLabel;
     private javax.swing.JTextField diameterTextField;
-    private javax.swing.JMenu editMenu;
     private javax.swing.JMenuItem exitMenuItem;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JLabel outputLabel;
-    private javax.swing.JMenuItem pasteMenuItem;
     private javax.swing.JLabel subtotalLabel;
     private javax.swing.JLabel taxLabel;
     private javax.swing.JLabel titleLabel;
